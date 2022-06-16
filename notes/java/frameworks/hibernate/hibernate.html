@@ -1,13 +1,15 @@
 <html>
     <body>
-        <link rel="stylesheet" href="/path/to/styles/default.min.css">
-        <script src="/path/to/highlight.min.js"></script>
+        <link rel="stylesheet" href="/css/highlightjs-styles/visual-studio-2015.css">
+        <link rel="stylesheet" href="/css/style.css">
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
         <script>hljs.highlightAll();</script>
         <img src="./img/one-to-many_table.svg">
-        <div>
+        <div class="div-1">
             Не знаю, честно говоря, как сделать лучше - копировать подробные куски или только часть, отвечающую за конкретное сопоставление. По задумке этот конспект не должен быть перегружен. Каждый пример - минимален, чтобы просто хватило понять. Поэтому все-таки я удалю аннотации, относящиеся к другим темам. Возможно, приложу более-менее полноценную программу целиком отдельно к конспекту и буду в потенциально сложных местах указывать, в каком другом моем конспекте можно почитать связанную информацию:
         </div>
-        <pre><code class="language-java">
+        <details><summary>Промежуточная сущность</summary>
+            <pre><code class="language-java">
     @Entity
     @Table(name = "film_s_category")
     //@org.hibernate.annotations.Immutable  // потом посмотрим, на что это влияет
@@ -75,6 +77,8 @@
 
         ...
     }
-        </code></pre>
+            </code></pre>
+        </details>
+        <p>Весьма удобно скрывать и показывать текст.</p>
     </body>
 </html>
